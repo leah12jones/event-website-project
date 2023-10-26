@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #01182A;
+    --secondary-color: #E8322F;
+    --accent-color: #E08D00;
+    --gray-100: #F1F6F9;
+}
+
+.nav-bar {
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+.nav-bar li {
+    list-style-type: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: var(--gray-100);
+    padding: 1em;
+}
