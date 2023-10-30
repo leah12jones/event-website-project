@@ -25,3 +25,19 @@
     color: var(--gray-100);
     padding: 1em;
 }
+
+.hero {
+    background-image: url('images/Rectangle\ 2\ \(1\).jpg');
+    display: flex;
+    height: 30em;
+    background-size: cover;
+}
+
+.sect-1 {
+    display: flex;
+    background-color: #E0EEFA;
+    padding: 3em;
+}
+
+
+}
