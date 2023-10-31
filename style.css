@@ -3,6 +3,7 @@
     --secondary-color: #E8322F;
     --accent-color: #E08D00;
     --gray-100: #F1F6F9;
+    --gray-700: #1D2A34;
 }
 
 .nav-bar {
@@ -10,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
+    padding: 0em 2em;
 }
 
 .nav-bar ul {
@@ -23,21 +24,46 @@
 .nav-bar a {
     text-decoration: none;
     color: var(--gray-100);
-    padding: 1em;
+    padding: 7px;
 }
 
-.hero {
-    background-image: url('images/Rectangle\ 2\ \(1\).jpg');
-    display: flex;
-    height: 30em;
-    background-size: cover;
+.hero-image {
+    background-image: url('images/hero-image.jpg');
+    height: 100vh;
 }
 
-.sect-1 {
+.hero-text {
+    text-align: center;
+}
+ 
+  .section {
     display: flex;
     background-color: #E0EEFA;
     padding: 3em;
 }
 
+.left-col {
+    padding: 1em;
+}
+.right-col {
+    padding: 2em;
+}
 
+.date-time{
+    padding: 6em;
+    background: url(images/dates-times.jpg);
+    background-size: cover;
+    color: var(--gray-100);
+}
+
+.left-col-bg-gray700 {
+    background-color: var(--gray-700);
+    padding: 1em;
+    flex: 1;
+}
+
+.right-col-bg-primary {
+    background-color: var(--primary-color);
+    padding: 1em;
+    flex: 2;
 }
