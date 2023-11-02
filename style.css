@@ -30,6 +30,8 @@
 .hero-image {
     background-image: url('images/hero-image.jpg');
     height: 100vh;
+    display: flex;
+    
 }
 
 .hero-text {
@@ -67,3 +69,24 @@
     padding: 1em;
     flex: 2;
 }
+
+  form div {
+    margin: 15px;
+  }
+  
+  form input {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999;
+    border-left: 4px solid red;
+  }
+
+  .flex-form-container {
+      display: flex;
+      justify-content: center;
+  }
+
+ 
+
+  
