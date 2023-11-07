@@ -102,8 +102,26 @@
       margin: 5em;
   }
 
+  .localinfo-section {
+      background-color:#E8322F;
+      color: white;
+      text-align: center;
+      padding-top: 1em;
+      padding-bottom: 1em;
+  }
 
+  .container-restaurants {
+      background-color: #01182A;
+      color: white;
+  }
+  
+  .container-restaurants-cards {
+      display: flex;
+  }
 
+  .container-hotels-cards {
+      display: flex;
+  }
  
 
   
