@@ -87,6 +87,23 @@
       justify-content: center;
   }
 
+  .flex-form-container > * {
+      flex: 1;
+  }
+
+.event-schedule-section {
+    background-color: #01182A;
+}
+
+  .event-schedule {
+      display: flex;
+      background-color:#E0EEFA;
+      padding: 2em;
+      margin: 5em;
+  }
+
+
+
  
 
   
