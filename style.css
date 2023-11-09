@@ -124,4 +124,29 @@
   }
  
 
-  
+  .container-activities {
+    background-color: #01182A;
+    color: white;
+}
+
+.container-activities-cards {
+    display: flex;
+}
+
+.container-faqs {
+    background-color: #E08D00;
+}
+
+.container-faqs-cards {
+    background-color: white;
+    margin: 4em;
+    padding: 4em;
+}
+
+.weather-policy-section{
+    background-image: url(images/weather-policy-img.jpg);
+}
+
+.weather-card {
+    background-color:#E8322F;
+}
