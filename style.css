@@ -155,38 +155,71 @@
 
   .container-hotels {
       text-align: center;
-      padding-top: 3em;
+      padding: 3em;
   }
 
   .container-hotels-cards {
       display: flex;
-      padding: 3em;
+      padding: 1em;
+      text-align: left;
   }
- 
 
   .container-activities {
     background-color: #01182A;
     color: white;
+    text-align: center;
+    padding: 3em;
 }
 
 .container-activities-cards {
     display: flex;
+    gap: 1em;
+    text-align: left;
 }
+
+.image-divider2{
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
 
 .container-faqs {
     background-color: #E08D00;
+    padding: 3em;
+    text-align: center;
 }
 
 .container-faqs-cards {
-    background-color: white;
+    
     margin: 4em;
     padding: 4em;
 }
 
+.faq-card {
+    background-color: white;
+    margin: 1em;
+    padding: 1em 3em;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
 .weather-policy-section{
     background-image: url(images/weather-policy-img.jpg);
+    background-size: cover;
+    padding: 3em;
 }
 
 .weather-card {
     background-color:#E8322F;
+    padding: 3em 5em;
+    text-align: center;
+    margin: 5em;
+    color: white;
+}
+
+.footer {
+    background-color:#01182A;
+    text-align: center;
 }
