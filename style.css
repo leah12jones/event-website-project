@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
 :root {
     --primary-color: #01182A;
     --secondary-color: #E8322F;
@@ -6,6 +8,24 @@
     --gray-700: #1D2A34;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'lato', sans-serif;
+}
+
+h2 {
+    font-family: 'lato', sans-serif;
+}
+
+p {
+    font-family: 'lato', sans-serif;
+}
+
+/* ---------------------------------------------------------------------------------> */
 .nav-bar {
     background: var(--secondary-color);
     display: flex;
@@ -25,6 +45,7 @@
     text-decoration: none;
     color: var(--gray-100);
     padding: 7px;
+    padding-right: 2em;
 }
 
 
@@ -66,6 +87,14 @@ button {
 .right-col {
     padding: 2em;
     padding-right: 8em;
+}
+
+.one-col {
+    flex: 1;
+}
+
+.two-col {
+    flex: 2;
 }
 
 .date-time{
@@ -175,6 +204,7 @@ button {
       padding: 3em;
   }
 
+  
  
 
   /* .card img {
@@ -237,10 +267,12 @@ button {
     text-align: center;
     margin: 5em;
     color: white;
-    border-radius: 10%;
+    border-radius: 40px;
 }
 
 .footer {
     background-color:#01182A;
     text-align: center;
+    color: white;
+    padding: 25px;
 }
