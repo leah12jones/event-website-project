@@ -276,3 +276,7 @@ button {
     color: white;
     padding: 25px;
 }
+
+.socials {
+    align-items: right;
+}
