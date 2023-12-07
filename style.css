@@ -72,6 +72,7 @@ button {
 .hero-text {
     text-align: center;
     color: white;
+    padding-right: 5em;
 
 }
  
@@ -106,13 +107,14 @@ button {
 
 .left-col-bg-gray700 {
     background-color: var(--gray-700);
-    padding: 1em;
+    padding: 2em;
     flex: 1;
+    padding-left: 3em;
 }
 
 .right-col-bg-primary {
     background-color: var(--primary-color);
-    padding: 1em;
+    padding: 3em;
     flex: 2;
 }
 
@@ -121,17 +123,29 @@ button {
     background-color: #E08D00;
   }
   
+  .form-row {
+      display: flex;
+      gap: 2em;
+  }
+
+  .form-row > * {
+      flex: 1;
+  }
+
   form input {
-    padding: 5px;
+    padding: 1em;
+    margin: 1em auto;
     width: 100%;
-    border: none;
-    border-bottom: 1px solid #999;
-    border-left: 4px solid red;
+    border: 1px solid #999;
+    display: block;
+    border-radius: 10px;
   }
 
   .flex-form-container {
       display: flex;
       justify-content: center;
+      gap: 2em;
+      padding: 2em;
   }
 
   .flex-form-container > * {
@@ -277,6 +291,18 @@ button {
     padding: 25px;
 }
 
-.socials {
-    align-items: right;
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em
 }
+
+.social-media-icons i {
+    font-size: 2em;
+}
+
+/* .social-media-icons img {
+    display: block;
+    width: 25px;
+} */
