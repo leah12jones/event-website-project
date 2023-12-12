@@ -26,7 +26,7 @@ p {
 }
 
 /* ---------------------------------------------------------------------------------> */
-.nav-bar {
+/* .nav-bar {
     background: var(--secondary-color);
     display: flex;
     justify-content: space-between;
@@ -46,13 +46,92 @@ p {
     color: var(--gray-100);
     padding: 7px;
     padding-right: 2em;
-}
+} */
 
+.navigation {
+    background: var(--background);
+    text-align: center;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #E8322F;
+    color: white;
+    font-size: x-small;
+    padding-right: 5em;
+    
+  }
+  
+  .nav-toggle {
+    display: none;
+  }
+  
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-toggle-label span {
+    color: white;
+    font-size: 1.5em;
+  }
+  
+  nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transition: transform 400ms ease-in-out;
+    transform-origin: top;
+
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  
+  nav a:hover {
+    color:#E08D00;
+  }
+  
+  .nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+  }
+  
+  .nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
 
 button {
     border-radius: 10px;
     color:#E08D00;
     border-color: #E08D00;
+    
 }
 
 .hero-image {
@@ -63,10 +142,8 @@ button {
     display: flex;
     align-items: center;
     justify-content: end;
-    padding: 2em;
-    margin-top: -2em;
-    margin-bottom: -2em;
-    
+    margin-top: -3.5em;
+    margin-bottom: -3.5em;
 }
 
 .hero-text {
@@ -122,6 +199,14 @@ button {
   form div {
     background-color: #E08D00;
   }
+
+  .form-header {
+      text-align: center;
+      background-color: #E08D00;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: white;
+  }
   
   .form-row {
       display: flex;
@@ -136,7 +221,7 @@ button {
     padding: 1em;
     margin: 1em auto;
     width: 100%;
-    border: 1px solid #999;
+    border: .3px solid #999;
     display: block;
     border-radius: 10px;
   }
@@ -144,8 +229,10 @@ button {
   .flex-form-container {
       display: flex;
       justify-content: center;
-      gap: 2em;
+      gap: 10em;
       padding: 2em;
+      padding-right: 10em;
+      color: white;
   }
 
   .flex-form-container > * {
@@ -175,7 +262,6 @@ button {
     background-position: center;
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: end;
   }
  
@@ -183,7 +269,7 @@ button {
       background-color:#E8322F;
       color: white;
       text-align: center;
-      padding-top: 2em;
+      padding-top: 1em;
       padding-bottom: 1em;
   }
 
@@ -218,9 +304,6 @@ button {
       padding: 3em;
   }
 
-  
- 
-
   /* .card img {
     width: 100%;
     height: 250px;
@@ -239,12 +322,11 @@ button {
 .image-divider2{
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 73vh;
     display: flex;
-    align-items: center;
     justify-content: end;
-    margin-top: -2em;
     margin-bottom: -2em;
+    padding-left: -3em;
   }
 
 .container-faqs {
@@ -306,3 +388,59 @@ button {
     display: block;
     width: 25px;
 } */
+/* --------------------------------- Desktop --------------------------------------------------------------------------------> */
+@media screen and (min-width: 600px) {
+    
+    
+    .nav-toggle-label {
+      display: none;
+    }
+  
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    nav {
+      all: unset;
+    }
+    
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    nav li {
+      margin-left: 3em;
+      margin-bottom: 0;
+    }
+    
+    nav a {
+      opacity: 1;
+      position: relative;
+    }
+  
+  /* add line above or below selection on hover */
+    
+    nav a::before {
+      content:"";
+      display: block;
+      height: 5px;
+      background: white;
+      position: absolute;
+      top: -.75em;
+      left: 0;
+      right: 0;
+    
+      
+      transform: scale(0,1);
+      transition: transform ease-in-out 250ms;
+      transform-origin: left;
+    }
+    
+    nav a:hover::before {
+      transform: scale(1,1);
+      
+    }
+  }
